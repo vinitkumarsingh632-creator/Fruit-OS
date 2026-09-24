@@ -1,122 +1,64 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import F from "./assets/F.png";
+import R from "./assets/R.png";
+import U from "./assets/U.png";
+import I from "./assets/I.png";
+import T from "./assets/T.png";
+import bg from './assets/Bg.png'
+import watermelon from './assets/Watermelon.png';
 import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import {Link} from 'react-router-dom'
+export default function App () {
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div style={styles.flex}>
+    <div>
+      <img src={F} alt="F character" height={200} className="F_char"/>
+    </div>
+    <div>
+      <img src={R} alt="R character" height={130}/>
+    </div>
+    <div>
+      <img src={U} alt="U character" width={200} className="U_char"/>
+    </div>
+    <div>
+      <img src={I} alt="I character" height={240}/>
+    </div>
+    <div>
+      <img src={T} alt="T character" height={120}/>
+    </div> 
+    <h2 style={{fontSize:'9rem',color:'green'}}>OS</h2>
+    </div>
+    <div style={{display:'flex',justifyContent:'center'}}>
 
-      <div className="ticks"></div>
+      <div style={{backgroundImage:`url(${bg})`, backgroundSize:'cover',backgroundRepeat:'no-repeat', width:'60%',borderRadius:'20px'}}>
+        <div className="bgCover">
+      
+      <div style={{display:"flex",justifyContent:'center',alignItems:'center',gap:'20px'}}>
+        <img src={watermelon} height={100} style={{rotate:'180deg'}}/>
+        <h2 style={{color:'white',fontSize:'3.5rem'}}>We<span className="lc">lc</span>o<span className="m">m</span>e</h2>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+        <img src={watermelon} height={100} className="bg" />
+        <div className="bgDiv">
+          <h3 className="bgText">
+          A fresh take on the desktop experience.<span style={{color:'white'}}> Built from the ground up as an experimental project</span>, Fruit OS combines a playful fruit-inspired interface with modern <span style={{color:'yellow'}}>web technologies to explore how an operating system environment can be designed and built.</span>
+          <div style={{textAlign:'center',paddingTop:'2rem',paddingBottom:'1rem'}} className="HomePage">
+            <Link to={'/home'} style={{textDecoration:"none",backgroundColor:'green',color:'white',borderRadius:'20px',padding:'0.5rem'}}>Enter the OS</Link>
+          </div>
+        </h3>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      </div>
+      </div>
+    </div>
+    
+    </div>
     </>
   )
 }
-
-export default App
+const styles = {
+  flex:{
+    display:"flex",
+    height:'40vh',
+    justifyContent:'center',
+    alignItems:'center',
+  }
+}
