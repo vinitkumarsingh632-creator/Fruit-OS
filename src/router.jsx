@@ -6,7 +6,7 @@ const router = createBrowserRouter([
         path:'/',
         element:<App/>
     },{
-        path:'/Home',
+        path:'/home',
         element:<Home/>
     }
 ])
