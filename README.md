@@ -1,28 +1,20 @@
-# Fruit OS 🍉
+# Fruit OS
 
-Fruit OS is a small experimental web-based desktop environment built with React.
+Fruit OS is a small web based OS with fruit theme.
 
-It is mainly a project to explore how an operating-system-style interface can be built for the web, including desktop apps, draggable windows, and a live clock.
+It contains two apps, notes and calculator.
 
 ## Features
 
-- Desktop-style interface
-- Live date, day and time
-- Notes app with multiple notes
-- Draggable note windows
-- Calculator app
-- Session storage for notes
-- Fruit-inspired UI
+- Draggable Windows
+- Session storage based Notes App
+- Calculator 
+- Fruit themed OS
+- Live OS
 
-## Tech Stack
+## Tech Stack that I have used !!
 
-- React
+- React (Sate Management)
 - JavaScript
 - CSS
 - Vite
-
-## Run locally
-
-```bash
-npm install
-npm run dev
