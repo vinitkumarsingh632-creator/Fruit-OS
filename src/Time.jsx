@@ -42,19 +42,19 @@ export default function Time() {
     return (
         <div className="clockContainer">
             <p className="date">
-                {dateObject.getDate()}{" "}
+                <span style={{color:'yellow'}}>{dateObject.getDate()}{" "}</span>
                 {month[dateObject.getMonth()]}{" "}
                 {dateObject.getFullYear()}
             </p>
 
-            <p className="day">
+            <p className="day" style={{color:'plum'}}>
                 {day[dateObject.getDay()]}
             </p>
 
             <p className="time">
                 {String(dateObject.getHours()).padStart(2, '0')}
                 :
-                {String(dateObject.getMinutes()).padStart(2, '0')}
+                <span style={{color:'red'}}>{String(dateObject.getMinutes()).padStart(2, '0')}</span>
                 :
                 {String(dateObject.getSeconds()).padStart(2, '0')}
             </p>
