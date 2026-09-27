@@ -4,12 +4,13 @@ Fruit OS is a small web based OS with fruit theme.
 
 It contains two apps, notes and calculator.
 
-<h2>
- <p>
+ ## Screenshot
+
+ <p align="center">
  <img src="./Screenshot/Front Page.png" width="45%"/>
  <img src="./Screenshot/Main Page.png" width="45%"/>
  </p>
-</h2>
+
 
 ## Features
 

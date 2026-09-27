@@ -6,6 +6,7 @@ export default function Calculator() {
     const [firstValue, setFirstValue] = useState(null)
     const [operator, setOperator] = useState(null)
     const [waiting, setWaiting] = useState(false)
+    
 
     function inputNumber(number) {
         if (waiting) {
@@ -94,7 +95,15 @@ export default function Calculator() {
                 {display}
             </div>
 
-            <div className="calculatorButtons">
+            <div className="calculatorButtons" onMouseDown={(event)=>{
+                const target = event.target
+                target.style.backgroundColor = 'white'
+                target.style.color = 'black'
+            }} onMouseUp={(event)=>{
+                const target = event.target
+                target.style.backgroundColor = 'black'
+                target.style.color = 'white'
+            }}>
                 <button onClick={clear}>AC</button>
                 <button onClick={toggleSign}>±</button>
                 <button onClick={percentage}>%</button>

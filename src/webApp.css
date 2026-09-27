@@ -46,7 +46,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    background: #1e1e1e;
+    background: #de0f0f;
     color: white;
     border-radius: 12px;
     overflow: hidden;
@@ -63,7 +63,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    background: #292929;
+    background: #4216d5;
     cursor: grab;
     user-select: none;
     touch-action: none;
@@ -112,13 +112,13 @@
     outline: none;
     border: none;
     padding: 18px;
-    background: #1e1e1e;
-    color: white;
+    background-color: rgb(226, 106, 106);
+    background-size: cover;
+    color: rgb(244, 240, 240);
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
-
 .noteContent::placeholder {
     color: #777;
 }
